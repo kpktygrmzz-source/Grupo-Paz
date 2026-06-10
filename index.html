@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Paz - Inteligencia Artificial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>📚 Grupo Paz - IA</h1>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#archivos" class="nav-link">Archivos</a></li>
+                <li><a href="#acerca" class="nav-link">Acerca de</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Inteligencia Artificial</h1>
+            <p>Apuntes y recursos de estudio para el dominio de la Inteligencia Artificial</p>
+            <button class="btn-primary" onclick="scrollToSection('archivos')">Ver Archivos</button>
+        </div>
+    </section>
+
+    <!-- Sección de Archivos -->
+    <section id="archivos" class="archivos-section">
+        <div class="container">
+            <h2>Archivos Disponibles</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="pdf">PDF</button>
+                <button class="filter-btn" data-filter="pages">Pages</button>
+            </div>
+            <div class="archivos-grid" id="archivosGrid">
+                <!-- Los archivos se cargarán dinámicamente aquí -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para Ver Detalles -->
+    <div class="modal" id="archivoModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <div id="modalBody"></div>
+            <a id="modalLink" href="#" class="btn-primary" download>Descargar Archivo</a>
+        </div>
+    </div>
+
+    <!-- Sección Acerca de -->
+    <section id="acerca" class="about-section">
+        <div class="container">
+            <h2>Sobre Este Repositorio</h2>
+            <div class="about-content">
+                <p>
+                    <strong>Grupo Paz</strong> es un repositorio colaborativo dedicado a compilar y compartir
+                    apuntes, recursos y materiales educativos sobre Inteligencia Artificial.
+                </p>
+                <h3>Contenido:</h3>
+                <ul class="contenido-list">
+                    <li>📖 Unidad 3 - Fundamentos de IA</li>
+                    <li>📖 Unidad 4 - Avances en IA</li>
+                    <li>📖 Unidad 5-6 - Aplicaciones y Casos de Estudio</li>
+                </ul>
+                <h3>Objetivo:</h3>
+                <p>
+                    Facilitar el aprendizaje colaborativo y proporcionar un acceso centralizado
+                    a todos los materiales necesarios para el estudio de la Inteligencia Artificial.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Tu Nombre" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Tu Correo" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Tu Mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Grupo Paz - Inteligencia Artificial. Todos los derechos reservados.</p>
+        <p>Repositorio: <a href="https://github.com/kpktygrmzz-source/Grupo-Paz" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
